@@ -4,14 +4,14 @@ const cors = require('cors');
 const app = express()
 const port = 3000
 
-const db = require('./database');
+const db = require('./setupDatabase');
 
 app.use(bodyParser.json());
 
 app.use(cors());
 
 app.get('/', (req, res) => {
-  res.json({ message: 'Welcome to our API' });
+  res.json({ message: 'Welcome to suiiiiiiiii' });
 })
 
 app.listen(port, () => {
