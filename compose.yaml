@@ -2,17 +2,22 @@ version: '3.8'
 
 services:
   frontend:
-    image: jkpgcity/frontend
-    build:
-      dockerfile: ./Frontend/Dockerfile
+    build: ./frontend
+    working_dir: /usr/src/frontend
+    volumes:
+      - ./frontend:/usr/src/frontend
+      - node_modules:/usr/src/frontend/node_modules
+
     command: npm run dev
     ports:
       - 5173:5173
 
   backend:
-    image: jkpgcity/backend
-    build:
-      dockerfile: ./Backend/Dockerfile
+    build: ./backend
+    working_dir: /usr/src/backend
+    volumes:
+      - ./backend:/usr/src/backend
+      - /usr/src/backend/node_modules
     command: npm start
     ports:
       - 3000:3000
