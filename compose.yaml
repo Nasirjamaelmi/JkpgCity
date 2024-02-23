@@ -1,0 +1,42 @@
+version: '3.8'
+
+services:
+  frontend:
+    image: jkpgcity/frontend
+    build:
+      dockerfile: ./Frontend/Dockerfile
+    command: npm run dev
+    ports:
+      - 5173:5173
+
+  backend:
+    image: jkpgcity/backend
+    build:
+      dockerfile: ./Backend/Dockerfile
+    command: npm start
+    ports:
+      - 3000:3000
+    depends_on:
+      - database
+
+  database:
+    image: mariadb
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: jkpgcity
+      MYSQL_USER: root
+      MYSQL_PASSWORD: root
+    ports:
+      - '3306:3306'
+    volumes:
+      - database-data:/var/lib/mysql
+
+  adminer:
+    image: adminer
+    ports:
+      - '8080:8080'
+
+volumes:
+  database-data:
+  node_modules:
