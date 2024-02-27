@@ -4,7 +4,7 @@ const cors = require('cors');
 const app = express()
 const port = 3000
 
-const db = require('./setupDatabase');
+const db = require('./database');
 
 app.use(bodyParser.json());
 
