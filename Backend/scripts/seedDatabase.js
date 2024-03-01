@@ -1,4 +1,4 @@
-const db = require("./database");
+const db = require("../config/database");
 const fs = require("fs");
 
 db.query(
@@ -18,7 +18,7 @@ db.query(
   }
 );
 
-fs.readFile("./stores.json", "utf8", (err, data) => {
+fs.readFile("/usr/src/backend/data/stores.json", "utf8", (err, data) => {
   if (err) {
     console.error(err);
     return;

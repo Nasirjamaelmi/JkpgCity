@@ -1,10 +1,10 @@
 const mysql = require("mysql");
 
 const dbConfig = {
-  host: "database",
-  user: "root",
-  password: "root",
-  database: "jkpgcity",
+  host: 'database',
+  user: 'root',
+  password: 'root',
+  database: 'jkpgcity',
 };
 
 // Create a MySQL connection
