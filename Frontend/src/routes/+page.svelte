@@ -1,18 +1,15 @@
 <script>
+  import { onMount } from "svelte";
+
+  /** @type {Array<{name: string, url: string, district: string|null}>} */
+  let venues = [];
+
+  onMount(async () => {
+    const res = await fetch("http://localhost:3000/api/venues");
+    const data = await res.json();
+    venues = data;
+  });
 </script>
-
-<h1>Welcome to saeee</h1>
-<p>
-  Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation
-</p>
-
-<svelte:head>
-  <title>Välkommen till Jönköping</title>
-  <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-  />
-</svelte:head>
 
 <!-- Jumbotron -->
 <div class="jumbotron">
@@ -25,34 +22,12 @@
 <div class="container">
   <div class="row">
     <div class="col-md-4">
-      <div class="grid-item">
-        <img
-          src="https://via.placeholder.com/400x200"
-          alt="Image 1"
-          class="img-fluid grid-img"
-        />
-        <p>Paragraph 1</p>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="grid-item">
-        <img
-          src="https://via.placeholder.com/400x200"
-          alt="Image 2"
-          class="img-fluid grid-img"
-        />
-        <p>Paragraph 2</p>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="grid-item">
-        <img
-          src="https://via.placeholder.com/400x200"
-          alt="Image 3"
-          class="img-fluid grid-img"
-        />
-        <p>Paragraph 3</p>
-      </div>
+      {#each venues as venue}
+        <div class="grid-item">
+          <a href={venue.url} />
+          <p>{venue.name}</p>
+        </div>
+      {/each}
     </div>
   </div>
 </div>
@@ -112,6 +87,7 @@
 />
 
 <style>
+  @import "https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css";
   .grid-img {
     height: 200px;
     object-fit: cover;
@@ -127,6 +103,4 @@
     padding: 20px 0;
     text-align: center;
   }
-
-  @import "https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css";
 </style>
