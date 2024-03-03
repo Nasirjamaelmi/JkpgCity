@@ -4,6 +4,10 @@
   /** @type {Array<{name: string, url: string, district: string|null}>} */
   let venues = [];
   let loading = false;
+  /**
+   * @type {string | null}
+   */
+  let selectedDistrict = null;
 
   onMount(async () => {
     loading = true;
@@ -12,6 +16,17 @@
     venues = data;
     loading = false;
   });
+
+  /**
+   * @param {string | null} district
+   */
+  function filterVenues(district) {
+    selectedDistrict = district;
+  }
+
+  function clearFilter() {
+    selectedDistrict = null;
+  }
 </script>
 
 <!-- Jumbotron -->
@@ -21,61 +36,53 @@
   </div>
 </div>
 
-<!-- 3-Grid with Pictures and Paragraphs -->
+<!-- District Filters -->
 <div class="container">
+  <div class="row">
+    <div class="col-md-2">
+      <div class="district" on:click={() => filterVenues("Öster")}>Öster</div>
+    </div>
+    <div class="col-md-2">
+      <div class="district" on:click={() => filterVenues("Väster")}>Väster</div>
+    </div>
+    <div class="col-md-2">
+      <div class="district" on:click={() => filterVenues("Tändsticksområdet")}>
+        Tändsticksområdet
+      </div>
+    </div>
+    <div class="col-md-2">
+      <div class="district" on:click={() => filterVenues("Atollen")}>
+        Atollen
+      </div>
+    </div>
+    <div class="col-md-2">
+      <div class="district" on:click={() => filterVenues("Resecentrum")}>
+        Resecentrum
+      </div>
+    </div>
+    <div class="col-md-1">
+      <div class="district" id="filter" on:click={() => clearFilter()}>
+        Clear Filter
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 3-Grid with Pictures and Paragraphs -->
+<div class="container mt-4">
   {#if loading}
     <p>Loading...</p>
   {/if}
   <div class="row">
     <div class="col-md-4">
       {#each venues as venue}
-        <div class="grid-item">
-          <a href={venue.url} />
-          <p>{venue.name}</p>
-        </div>
+        {#if venue.district === selectedDistrict}
+          <div class="grid-item mb-4">
+            <a href={venue.url} />
+            <p>{venue.name}</p>
+          </div>
+        {/if}
       {/each}
-    </div>
-  </div>
-</div>
-
-<!-- 4-Grid Clickable Section -->
-<div class="container">
-  <div class="row">
-    <div class="col-md-3">
-      <a href="#" class="grid-item">
-        <img
-          src="https://via.placeholder.com/300x150"
-          alt="Grid 1"
-          class="img-fluid grid-img"
-        />
-      </a>
-    </div>
-    <div class="col-md-3">
-      <a href="#" class="grid-item">
-        <img
-          src="https://via.placeholder.com/300x150"
-          alt="Grid 2"
-          class="img-fluid grid-img"
-        />
-      </a>
-    </div>
-    <div class="col-md-3">
-      <a href="#" class="grid-item">
-        <img
-          src="https://via.placeholder.com/300x150"
-          alt="Grid 3"
-          class="img-fluid grid-img"
-        />
-      </a>
-    </div>
-    <div class="col-md-3">
-      <a href="#" class="grid-item">
-        <img
-          src="https://via.placeholder.com/300x150"
-          alt="Grid 4"
-          class="img-fluid grid-img"
-        />
-      </a>
     </div>
   </div>
 </div>
@@ -94,10 +101,7 @@
 
 <style>
   @import "https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css";
-  .grid-img {
-    height: 200px;
-    object-fit: cover;
-  }
+
   .grid-item {
     transition: transform 0.3s;
   }
@@ -108,5 +112,31 @@
     background-color: #f8f9fa;
     padding: 20px 0;
     text-align: center;
+  }
+  .district {
+    min-width: 200px;
+    min-height: 200px;
+    border: 5px solid black;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    /* background-color: red; */
+  }
+  #filter {
+    border: none;
+    min-width: 150px;
+    min-height: 50px;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px;
+    padding-left: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
   }
 </style>

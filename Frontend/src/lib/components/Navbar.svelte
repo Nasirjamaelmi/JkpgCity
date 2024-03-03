@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Navbar</a>
+  <a class="navbar-brand" href="#">JÖNKÖPING CITY</a>
   <button
     class="navbar-toggler"
     type="button"
@@ -16,7 +16,7 @@
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
         <a class="nav-link" href="#"
-          >Home <span class="sr-only">(current)</span></a
+          >Hem <span class="sr-only">(current)</span></a
         >
       </li>
       <li class="nav-item">
