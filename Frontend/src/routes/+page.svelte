@@ -3,11 +3,14 @@
 
   /** @type {Array<{name: string, url: string, district: string|null}>} */
   let venues = [];
+  let loading = false;
 
   onMount(async () => {
+    loading = true;
     const res = await fetch("http://localhost:3000/api/venues");
     const data = await res.json();
     venues = data;
+    loading = false;
   });
 </script>
 
@@ -20,6 +23,9 @@
 
 <!-- 3-Grid with Pictures and Paragraphs -->
 <div class="container">
+  {#if loading}
+    <p>Loading...</p>
+  {/if}
   <div class="row">
     <div class="col-md-4">
       {#each venues as venue}
