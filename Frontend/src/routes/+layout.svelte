@@ -14,10 +14,30 @@
   <div class="pt-16">
     <Navbar />
   </div>
-  <main>
+  <main class="height">
     <slot />
   </main>
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Välkommen till Jönköping</p>
+    </div>
+  </footer>
 </div>
 
 <style>
+  .height {
+    padding-bottom: 20px;
+  }
+  footer {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    /* You can add other styling properties as needed */
+  }
 </style>
