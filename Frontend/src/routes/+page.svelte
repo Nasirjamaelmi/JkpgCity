@@ -63,7 +63,7 @@
       <!-- svelte-ignore a11y-click-events-have-key-events -->
       <!-- svelte-ignore a11y-no-static-element-interactions -->
       <div class="district" on:click={() => filterVenues("Väster")}>
-        <svg
+        <svg  
           xmlns="http://www.w3.org/2000/svg"
           width="100"
           height="100"
@@ -173,7 +173,7 @@
         <div class="row">
           {#each venues as venue}
             {#if venue.district === selectedDistrict}
-              <div class="col-sm">
+              <div class="col-sm" id="url">
                 <a
                   href={`https://${venue.url}`}
                   target="_blank"
@@ -232,6 +232,12 @@
     flex-direction: column;
     align-items: center;
     cursor: pointer;
+  }
+  #url{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100vh;
   }
   #url a {
     color: inherit;
