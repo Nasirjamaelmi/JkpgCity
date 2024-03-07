@@ -26,7 +26,7 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav ml-auto">
       <li class="nav-item active">
-        <a class="nav-link text" href="#"
+        <a class="nav-link text" href="/home"
           >UPPTÄCK <span class="sr-only">(current)</span></a
         >
       </li>

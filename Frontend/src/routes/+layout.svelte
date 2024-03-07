@@ -26,18 +26,24 @@
 </div>
 
 <style>
-  .height {
-    padding-bottom: 20px;
-  }
-  footer {
+  .container {
     background-color: #f0f0f0;
     padding: 20px;
     text-align: center;
+    /* You can add other styling properties as needed */
+  }
+
+  footer {
     position: fixed;
     left: 0;
     bottom: 0;
     right: 0;
     width: 100%;
-    /* You can add other styling properties as needed */
+    height: 60px; /* Adjust the height as needed */
+    background-color: #f0f0f0;
+  }
+
+  .height {
+    padding-bottom: 80px; /* Adjust the padding to accommodate the fixed footer */
   }
 </style>

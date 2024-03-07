@@ -32,7 +32,7 @@
 <!-- Jumbotron -->
 <div class="jumbotron">
   <div class="container">
-    <h1 class="display-4">Välkommen till ditt JÖNKÖPING</h1>
+    <h1 class="display-4">Välkommen till Jönköping</h1>
   </div>
 </div>
 
@@ -63,7 +63,7 @@
       <!-- svelte-ignore a11y-click-events-have-key-events -->
       <!-- svelte-ignore a11y-no-static-element-interactions -->
       <div class="district" on:click={() => filterVenues("Väster")}>
-        <svg  
+        <svg
           xmlns="http://www.w3.org/2000/svg"
           width="100"
           height="100"
@@ -168,25 +168,19 @@
     <p>Loading...</p>
   {/if}
   <div class="row">
-    <div class="col-md-4">
-      <div class="container">
-        <div class="row">
-          {#each venues as venue}
-            {#if venue.district === selectedDistrict}
-              <div class="col-sm" id="url">
-                <a
-                  href={`https://${venue.url}`}
-                  target="_blank"
-                  class="no-decoration"
-                >
-                  <p class="venuestyle">{venue.name}</p>
-                </a>
-              </div>
-            {/if}
-          {/each}
+    {#each venues as venue}
+      {#if venue.district === selectedDistrict}
+        <div class="col-md-4" id="url">
+          <a
+            href={`https://${venue.url}`}
+            target="_blank"
+            class="no-decoration"
+          >
+            <p class="venuestyle">{venue.name}</p>
+          </a>
         </div>
-      </div>
-    </div>
+      {/if}
+    {/each}
   </div>
 </div>
 
@@ -197,56 +191,25 @@
 
 <style>
   @import "https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css";
-
-  .grid-item {
-    transition: transform 0.3s;
-  }
-  .grid-item:hover {
-    transform: scale(1.05);
-  }
   .district {
-    min-width: 200px;
-    min-height: 200px;
-    border-radius: 8px;
-    padding: 10px;
-    margin: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    cursor: pointer;
-    /* background-color: red; */
+    padding: 20px;
+    text-align: center;
   }
-  .container {
+
+  #url {
     display: flex;
     flex-direction: row;
-  }
-  #filter {
-    border: none;
-    min-width: 150px;
-    min-height: 50px;
-    border-radius: 8px;
-    padding: 10px;
-    margin: 10px;
-    padding-left: 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    cursor: pointer;
-  }
-  #url{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100vh;
+    background-color: #f0f0f0;
+    margin-bottom: 10px; /* Added margin bottom for spacing */
   }
   #url a {
     color: inherit;
     text-decoration: none;
+    width: 100%;
   }
   .venuestyle {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    height: 50px;
+    padding: 10px;
     margin: 0;
   }
 </style>
