@@ -14,6 +14,11 @@ class Venue {
   }
 
   static update(id, data, callback) {
+
+    if(data.created_at){
+      delete data.created_at;
+    }
+
     db.query('UPDATE venues SET ? WHERE id = ?', [data, id], callback);
   }
 
