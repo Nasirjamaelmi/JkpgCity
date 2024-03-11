@@ -1,2 +1,2 @@
 @echo off
-docker-compose run -d backend node seedDatabase.js
+docker-compose run backend node ./scripts/seedDatabase.js

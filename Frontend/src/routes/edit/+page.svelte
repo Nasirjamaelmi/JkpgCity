@@ -1,5 +1,6 @@
 <script>
   import { onMount } from "svelte";
+  import EditVenueForm from "$lib/components/EditVenueForm.svelte";
 
   /** @type {Array<{name: string, url: string, district: string|null}>} */
   let venues = [];
@@ -12,7 +13,14 @@
   /**
    * @type {{ name: string; url: string; district: string | null; }}
    */
+  let selectedVenue;
 
+  /**
+   * @param {{ name: string; url: string; district: string | null; }} venue
+   */
+  function handleEdit(venue) {
+    selectedVenue = venue;
+  }
   onMount(async () => {
     loading = true;
     const res = await fetch("http://localhost:3000/api/venues");
@@ -166,6 +174,10 @@
   </div>
 </div>
 
+{#if selectedVenue}
+  <EditVenueForm venue={selectedVenue} />
+{/if}
+
 <!-- 3-Grid with Pictures and Paragraphs -->
 <div class="container mt-4">
   {#if loading}
@@ -182,6 +194,7 @@
           >
             <p class="venuestyle">{venue.name}</p>
           </a>
+          <button on:click={() => handleEdit(venue)}>Edit</button>
         </div>
       {/if}
     {/each}

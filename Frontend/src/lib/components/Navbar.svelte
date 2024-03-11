@@ -25,60 +25,23 @@
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav ml-auto">
-      <li class="nav-item active">
-        <a class="nav-link text" href="/home"
-          >UPPTÄCK <span class="sr-only">(current)</span></a
-        >
+      <li class="nav-item">
+        <a class="nav-link text" href="/">UPPTÄCK</a>
       </li>
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link text" href="#"
-              >EVENEMANG <span class="sr-only">(current)</span></a
-            >
-          </li>
-
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item active">
-                <a class="nav-link text" href="#"
-                  >STADSDELAR <span class="sr-only">(current)</span></a
-                >
-              </li>
-
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
-                  <li class="nav-item active">
-                    <a class="nav-link text" href="#">
-                      <span class="sr-only">(current)</span></a
-                    >
-                  </li>
-
-                  <li class="nav-item">
-                    <a class="nav-link text" href="#"></a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a
-                      class="nav-link dropdown-toggle"
-                      href="#"
-                      id="navbarDropdown"
-                      role="button"
-                      data-toggle="dropdown"
-                      aria-haspopup="true"
-                      aria-expanded="false"
-                    >
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </ul>
-          </div>
-        </ul>
-      </div>
+      <li class="nav-item">
+        <a class="nav-link text" href="/#">EVENEMANG</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text" href="/login">SIGN IN</a>
+      </li>
     </ul>
   </div>
 </nav>
+
+<link
+  rel="stylesheet"
+  href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+/>
 
 <style>
   .text {

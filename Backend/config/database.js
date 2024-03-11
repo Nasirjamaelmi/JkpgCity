@@ -4,7 +4,7 @@ const dbConfig = {
   host: 'database',
   user: 'root',
   password: 'root',
-  database: 'jkpgcity',
+  database: "jkpgcity"
 };
 
 // Create a MySQL connection
@@ -18,5 +18,7 @@ db.connect((err) => {
   }
   console.log("Connected to the database");
 });
+
+
 
 module.exports = db;
