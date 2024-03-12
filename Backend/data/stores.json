@@ -3,7 +3,7 @@
         "name": "Åhlens",
         "url": "ahlens.se/varuhus/jonkoping?utm_source=google&utm_medium=organic&utm_campaign=business_profile&utm_content=website_link",
         "district": "Öster",
-        "venueType": "Shoppa"
+        "venueType": "Clothing/Shoes"
     },
     {
         "name": "Akademibokhandeln",
@@ -15,13 +15,13 @@
         "name": "Apoteket AB",
         "url": "apoteket.se/apotek/apoteket-ostra-storgatan-jonkoping/",
         "district": null,
-        "venueType": "Shoppa"
+        "venueType": "Pharmacy"
     },
     {
         "name": "Apotek Hjärtat",
         "url": "apotekhjartat.se/hitta-apotek-hjartat/jonkoping/apotek_hjartat_smedjegatan_2_jonkoping/",
         "district": null,
-        "venueType": "Shoppa"
+        "venueType": "Pharmacy"
     },
     {
         "name": "Ashur Brud & Fest - Skrädderi",
@@ -72,13 +72,13 @@
         "name": "Bikupan",
         "url": "bikupan.org",
         "district": "Tändsticksområdet",
-        "venueType": "Shoppa"
+        "venueType": "Grocery"
     },
     {
         "name": "Blankdays",
         "url": "https://blankdays.com/collections/all-products?gclid=CjwKCAjwov6hBhBsEiwAvrvN6EZZ1PsnlSJhnE7bmxINtl0Y0noU3rvCybdt217CGd3-bqMdx3mYRxoCK5EQAvD_BwE",
         "district": "Tändsticksområdet",
-        "venueType": "Shoppa"
+        "venueType": "Clothing/Shoes"
     },
     {
         "name": "Boardlife",
@@ -96,12 +96,12 @@
         "name": "Boutique Lykka",
         "url": "boutiquelykka.se",
         "district": "Öster",
-        "venueType": "Shoppa"
+        "venueType": "Clothing/Shoes"
     },
     {
         "name": "Broder Bläck",
         "url": "facebook.com/broderblacktatuering/",
-        "district": "Öster"
+        "district": "Clothing/Shoes"
     },
     {
         "name": "Buketten",
@@ -125,19 +125,19 @@
         "name": "Carlings",
         "url": "carlings.com/sv/corporate/Butiker/sweden/58f/",
         "district": "Öster",
-        "venueType": "Shoppa"
+        "venueType": "Clothing/Shoes"
     },
     {
         "name": "Casa Souk",
         "url": "casasouk.se",
         "district": "Väster",
-        "venueType": "Shoppa"
+        "venueType": "Clothing/Shoes"
     },
     {
         "name": "Cervera",
         "url": "cervera.se/hitta-butik/",
         "district": "Öster",
-        "venueType": "Shoppa"
+        "venueType": "Retail"
     },
     {
         "name": "Clas Ohlson",
@@ -149,19 +149,19 @@
         "name": "Coop Atollen",
         "url": "coop.se/butiker-erbjudanden/coop/coop-atollen-jonkoping/",
         "district": "Atollen",
-        "venueType": "Shoppa"
+        "venueType": "Grocery"
     },
     {
         "name": "Coop Östra Torget",
         "url": "coop.se/butiker-erbjudanden/coop/coop-ostra-torget/",
         "district": "Öster",
-        "venueType": "Shoppa"
+        "venueType": "Grocery"
     },
     {
         "name": "Copenhagen Luxe",
         "url": "https://copenhagenluxe.dk/",
         "district": "Öster",
-        "venueType": "Shoppa"
+        "venueType": "Clothing/Shoes"
     },
     {
         "name": "Day fotografi",
@@ -173,13 +173,13 @@
         "name": "Dinos kemtvätt",
         "url": "dinos.nu",
         "district": "Väster",
-        "venueType": "Shoppa"
+        "venueType": "Retail"
     },
     {
         "name": "Din Sko",
         "url": "dinsko.se/stores",
         "district": "Öster",
-        "venueType": "Shoppa"
+        "venueType": "Clothing/Shoes"
     },
     {
         "name": "Direkt optik",
@@ -191,7 +191,7 @@
         "name": "Dressman",
         "url": "dressmann.com/no/bedriftssider/finn-butikk/Sweden/Dressmann_Jonkoping/",
         "district": "Öster",
-        "venueType": "Shoppa"
+        "venueType": "Clothing/Shoes"
     },
     {
         "name": "Elias Urmästare",
@@ -203,7 +203,7 @@
         "name": "Engströms Urmakeri",
         "url": "engstromsurmakeri.se",
         "district": null,
-        "venueType": "Shoppa"
+        "venueType": "Retail"
     },
     {
         "name": "Euroex",
@@ -220,7 +220,7 @@
         "name": "Fabriken",
         "url": "butikfabriken.se",
         "district": "Atollen",
-        "venueType": "Shoppa"
+        "venueType": "Clothing/Shoes"
     },
     {
         "name": "Fiction Prescription",
@@ -238,13 +238,13 @@
         "name": "Foten",
         "url": "https://www.foten.se/",
         "district": null,
-        "venueType": "Shoppa"
+        "venueType": "Clothing/Shoes"
     },
     {
         "name": "Friendly Corner",
         "url": "https://friendlycorner.se/butiken",
         "district": "Tändsticksområdet",
-        "venueType": "Shoppa"
+        "venueType": "Retail"
     },
     {
         "name": "Galleri 701 ramcenter",
@@ -255,103 +255,103 @@
         "name": "Gant",
         "url": "gant.se/stores?lat=57.78261370000001&long=14.1617876&postalCode=j%C3%B6nk%C3%B6ping&radius=10.0",
         "district": "Atollen",
-        "venueType": "Shoppa"
+        "venueType": "Clothing/Shoes"
     },
     {
         "name": "Gåvan",
         "url": "gavanjonkoping.se",
         "district": "Öster",
-        "venueType": "Shoppa"
+        "venueType": "Retail"
     },
     {
         "name": "Gina Tricot",
         "url": "ginatricot.com/se/find-store",
         "district": "Öster",
-        "venueType": "Shoppa"
+        "venueType": "Clothing/Shoes"
     },
     {
         "name": "Go Banana",
         "url": "gobanana.se",
         "district": "Väster",
-        "venueType": "Shoppa"
+        "venueType": "Grocery"
     },
     {
         "name": "Godis och Tobakshörnan",
         "url": null,
         "district": "Öster",
-        "venueType": "Shoppa"
+        "venueType": "Grocery"
     },
     {
         "name": "Golden athlete",
         "url": "goldenathlete.se/sv/butiker-2",
         "district": "Öster",
-        "venueType": "Shoppa"
+        "venueType": "Retail"
     },
     {
         "name": "Grmawit Store",
         "url": "grmawit.com/",
         "district": "Väster",
-        "venueType": "Shoppa"
+        "venueType": "Clothing/Shoes"
     },
     {
         "name": "Guldsmedjan Snarberg",
         "url": "guldsmedjan-snarberg.se",
         "district": "Väster",
-        "venueType": "Shoppa"
+        "venueType": "Retail"
     },
     {
         "name": "Hälsokraft",
         "url": "halsokraft.se/butiker?butik=503",
         "district": "Öster",
-        "venueType": "Shoppa"
+        "venueType": "Retail"
     },
     {
         "name": "Hemköp",
         "url": "hemkop.se/butik/4674",
         "district": "Väster",
-        "venueType": "Shoppa"
+        "venueType": "Grocery"
     },
     {
         "name": "Hemmakväll",
         "url": "hemmakvall.se/hitta-butik/",
         "district": "Öster",
-        "venueType": "Shoppa"
+        "venueType": "Grocery"
     },
     {
         "name": "Hemtex",
         "url": "hemtex.se/hitta-butik/jonkoping",
         "district": "Öster",
-        "venueType": "Shoppa"
+        "venueType": "Grocery"
     },
     {
         "name": "Hi-fi Klubben",
         "url": "hifiklubben.se/hitta-butik/jonkoping/?gclid=Cj0KCQjwhsmaBhCvARIsAIbEbH4w2ngSDzygBKQSqHVzCSFAplyrpByCMojT6dfo-Xnjcn7P9j_jBn8aAsD0EALw_wcB",
         "district": "Väster",
-        "venueType": "Shoppa"
+        "venueType": "Retail"
     },
     {
         "name": "H&M",
         "url": "hm.com/sv_se/customer-service/shoppa-pa-hm/store-locator",
         "district": "Öster",
-        "venueType": "Shoppa"
+        "venueType": "Clothing/Shoes"
     },
     {
         "name": "H&M Home",
         "url": "hm.com/sv_se/customer-service/shoppa-pa-hm/store-locator",
         "district": "Öster",
-        "venueType": "Shoppa"
+        "venueType": "Clothing/Shoes"
     },
     {
         "name": "Indiska",
         "url": "indiska.com/se/butiker",
         "district": "Öster",
-        "venueType": "Shoppa"
+        "venueType": "Retail"
     },
     {
         "name": "Jeansshoppen",
         "url": "jeansshopen.se/sv/kontakt",
         "district": "Öster",
-        "venueType": "Shoppa"
+        "venueType": "Clothing/Shoes"
     },
     {
         "name": "JL Sycenter",
@@ -374,7 +374,7 @@
         "name": "KappAhl",
         "url": "www.kappahl.com/sv-SE/kundservice/kundservice/hitta-butik/",
         "district": "Öster",
-        "venueType": "Shoppa"
+        "venueType": "Clothing/Shoes"
     },
     {
         "name": "Karin Lund Design",
@@ -386,79 +386,79 @@
         "name": "Katrin Bååths Ateljé",
         "url": "https://katrinbaath.se/ateljen/",
         "district": "Tändsticksområdet",
-        "venueType": "Shoppa"
+        "venueType": "Retail"
     },
     {
         "name": "Kicks",
         "url": "kicks.se/butiker/jonkoping-smedjegatan",
         "district": "Öster",
-        "venueType": "Shoppa"
+        "venueType": "Retail"
     },
     {
         "name": "Kjell & Company",
         "url": "kjell.com/se/butiker/sodra-strandgatan-5",
         "district": "Öster",
-        "venueType": "Shoppa"
+        "venueType": "Retail"
     },
     {
         "name": "Klädscoopet",
         "url": "facebook.com/Kladscoopet/",
         "district": "Öster",
-        "venueType": "Shoppa"
+        "venueType": "Clothing/Shoes"
     },
     {
         "name": "KOiJ Konsthantverk",
         "url": "koij.se",
         "district": "Öster",
-        "venueType": "Shoppa"
+        "venueType": "Retail"
     },
     {
         "name": "Kristina Brud & Fest",
         "url": "kristinabrud-fest.se",
         "district": "Väster",
-        "venueType": "Shoppa"
+        "venueType": "Clothing/Shoes"
     },
     {
         "name": "Kronans Apotek Atollen",
         "url": "apoteksinfo.nu/apotek/kronans_apotek_atollen_j%C3%B6nk%C3%B6ping-1415",
         "district": "Atollen",
-        "venueType": "Shoppa"
+        "venueType": "Pharmacy"
     },
     {
         "name": "Kvänum Kök",
         "url": "kvanum.com/se/showrooms/jonkoping/",
         "district": "Öster",
-        "venueType": "Shoppa"
+        "venueType": "Retail"
     },
     {
         "name": "Lagerhaus",
         "url": "lagerhaus.se/stores",
         "district": "Öster",
-        "venueType": "Shoppa"
+        "venueType": "Retail"
     },
     {
         "name": "Lavér Studio",
         "url": "laverstudio.com/",
         "district": null,
-        "venueType": "Shoppa"
+        "venueType": "Retail"
     },
     {
         "name": "Life Naturlig Hälsa",
         "url": "https://www.lifebutiken.se/stores",
         "district": "Väster",
-        "venueType": "Shoppa"
+        "venueType": "Retail"
     },
     {
         "name": "Lilla Violen",
         "url": "lillaviolen.com/",
         "district": "Väster",
-        "venueType": "Shoppa"
+        "venueType": "Retail"
     },
     {
         "name": "Lindex",
         "url": "lindex.com/se/hitta-din-butik?location=57.756066%2C14.188254&storeId=002&zoom=11",
         "district": "Öster",
-        "venueType": "Shoppa"
+        "venueType": "Clothing/Shoes"
     },
     {
         "name": "Livspotential Kroppsterapi",
@@ -476,25 +476,25 @@
         "name": "Macforum",
         "url": "macforum.se/butiker/forum-jonkoping",
         "district": "Öster",
-        "venueType": "Shoppa"
+        "venueType": "Retail"
     },
     {
         "name": "MarQet",
         "url": "mq.se/butiker/?gclid=Cj0KCQjwteOaBhDuARIsADBqRejM-U3YQY9vh4F6gSXC2LnJWPVGKJ7CGfiCl1tYkREGUR37cTWMNcoaAjFGEALw_wcB",
         "district": "Öster",
-        "venueType": "Shoppa"
+        "venueType": "Clothing/Shoes"
     },
     {
         "name": "Mimosa City",
         "url": "mimosacity.se",
         "district": null,
-        "venueType": "Shoppa"
+        "venueType": "Retail"
     },
     {
         "name": "Moderna Smycken",
         "url": "klockorochsmycken.se/",
         "district": "Öster",
-        "venueType": "Shoppa"
+        "venueType": "Retail"
     },
     {
         "name": "Naturkompaniet",
@@ -512,13 +512,13 @@
         "name": "New Yorker",
         "url": "newyorker.de/se/stores/",
         "district": "Öster",
-        "venueType": "Shoppa"
+        "venueType": "Clothing/Shoes"
     },
     {
         "name": "Nilson Shoes",
         "url": "dinsko.se/stores",
         "district": "Öster",
-        "venueType": "Shoppa"
+        "venueType": "Clothing/Shoes"
     },
     {
         "name": "Noa Noa",
@@ -530,25 +530,25 @@
         "name": "Nordisk Möbelkonst",
         "url": "nordiskmobelkonst.se/",
         "district": "Öster",
-        "venueType": "Shoppa"
+        "venueType": "Retail"
     },
     {
         "name": "Normal",
         "url": "normal.se/hitta-butik/",
         "district": "Öster",
-        "venueType": "Shoppa"
+        "venueType": "Retail"
     },
     {
         "name": "Nya Musik",
         "url": "nyamusik.se/",
         "district": "Väster",
-        "venueType": "Shoppa"
+        "venueType": "Retail"
     },
     {
         "name": "Once for girls",
         "url": "oncestore.se/",
         "district": "Öster",
-        "venueType": "Shoppa"
+        "venueType": "Clothing/Shoes"
     },
     {
         "name": "Önska",
@@ -578,25 +578,25 @@
         "name": "Partyland",
         "url": "partyland.party/butiker/",
         "district": "Väster",
-        "venueType": "Shoppa"
+        "venueType": "Retail"
     },
     {
         "name": "Planta Blommor",
         "url": "plantablommor.se/?gclid=Cj0KCQjwteOaBhDuARIsADBqRehsWXSRNHjeGnPn_AyambJZLmNntWxsMnUkANIHdme0NoDtc2Xi8mgaAicoEALw_wcB#.Y2p1tuzMLPZ",
         "district": "Väster",
-        "venueType": "Shoppa"
+        "venueType": "Retail"
     },
     {
         "name": "Pleasure erotic shop",
         "url": "pleasureeroticshop.se/",
         "district": "Väster",
-        "venueType": "Shoppa"
+        "venueType": "Retail"
     },
     {
         "name": "PMU Second Hand Jönköping City",
         "url": "pmu.se/stores/jonkopingcity/",
         "district": "Öster",
-        "venueType": "Shoppa"
+        "venueType": "Retail"
     },
     {
         "name": "Pressbyrån Östra storgatan",
@@ -632,13 +632,13 @@
         "name": "Rituals",
         "url": "rituals.com/sv-se/store-detail?store=J%C3%B6nk%C3%B6ping-%C3%96stra-Storgatan",
         "district": "Öster",
-        "venueType": "Shoppa"
+        "venueType": "Retail"
     },
     {
         "name": "Rizzo",
         "url": "rizzo.se/stores/",
         "district": "Öster",
-        "venueType": "Shoppa"
+        "venueType": "Retail"
     },
     {
         "name": "Röda Korset Second Hand ",
@@ -649,7 +649,7 @@
         "name": "Rundquist & Zälle",
         "url": "rundquist-zalle.com",
         "district": "Väster",
-        "venueType": "Shoppa"
+        "venueType": "Clothing/Shoes"
     },
     {
         "name": "Säfvers Tobak",
@@ -667,13 +667,13 @@
         "name": "Sandströms",
         "url": "sandstroms.nu/butiker/sandstroms-jonkoping",
         "district": "Öster",
-        "venueType": "Shoppa"
+        "venueType": "Clothing/Shoes"
     },
     {
         "name": "Sarabello",
         "url": "facebook.com/people/SARABELLO/100054240470073/",
         "district": "Öster",
-        "venueType": "Shoppa"
+        "venueType": "Retail"
     },
     {
         "name": "Saumas sko & nyckelservice",
@@ -685,13 +685,13 @@
         "name": "Sjöqvists skomakeri",
         "url": "sjoqvistskomakeri.se/",
         "district": "Väster",
-        "venueType": "Shoppa"
+        "venueType": "Clothing/Shoes"
     },
     {
         "name": "Smålands Skinnmanufaktur",
         "url": "smalandsskinnmanufaktur.se/",
         "district": "Tändsticksområdet",
-        "venueType": "Shoppa"
+        "venueType": "Retail"
     },
     {
         "name": "Smarteyes",
@@ -703,7 +703,7 @@
         "name": "Smycka Guld",
         "url": "smycka.se/store/19",
         "district": null,
-        "venueType": "Shoppa"
+        "venueType": "Retail"
     },
     {
         "name": "Smycket",
@@ -733,13 +733,13 @@
         "name": "Story",
         "url": "storyjkpg.se",
         "district": "Atollen",
-        "venueType": "Shoppa"
+        "venueType": "Clothing/Shoes"
     },
     {
         "name": "SunOff",
         "url": "sunoff.se/butiker/jonkoping?gclid=CjwKCAjw8JKbBhBYEiwAs3sxNy3EnUFGceeFxyJN35fymdpsg5qEWUTPj6Sx0TbNoLdwp8E6AI-I5xoC45gQAvD_BwE",
         "district": "Väster",
-        "venueType": "Shoppa"
+        "venueType": "Retail"
     },
     {
         "name": "Synoptik",
@@ -763,7 +763,7 @@
         "name": "Systembolaget",
         "url": "systembolaget.se/butiker-ombud/",
         "district": "Öster",
-        "venueType": "Shoppa"
+        "venueType": "Grocery"
     },
     {
         "name": "The Body Shop",
@@ -780,13 +780,13 @@
         "name": "Twilfit",
         "url": "shop.change.com/sv-SE",
         "district": "Öster",
-        "venueType": "Shoppa"
+        "venueType": "Clothing/Shoes"
     },
     {
         "name": "Ur & Penn",
         "url": "uropenn.se/hitta-butik/",
         "district": "Öster",
-        "venueType": "Shoppa"
+        "venueType": "Retail"
     },
     {
         "name": "Västanhem Butik",
