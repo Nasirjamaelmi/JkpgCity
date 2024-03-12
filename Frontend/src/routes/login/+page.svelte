@@ -1,65 +1,36 @@
 <script>
-  // @ts-ignore
-  import { onMount } from "svelte";
-  // @ts-ignore
-  import { goto } from "$app/navigation";
-  // @ts-ignore
-  import bcrypt from "bcryptjs"; // Import bcrypt for password comparison
-
   let username = "";
   let password = "";
-  let errorMessage = "";
-
-  onMount(() => {
-    // You might want to include logic here to check if the user is already logged in and redirect if necessary.
-  });
-
-  function handleLogin() {
-    if (username && password) {
-      // Assuming you have an API endpoint on the server to handle authentication
-      fetch("/login", {
+  let loginStatus = "";
+  const login = async () => {
+    try {
+      const response = await fetch("http://localhost:3000/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ un: username, pw: password }),
-      })
-        .then((response) => response.json())
-        .then((data) => {
-          if (data.success) {
-            // Use bcrypt.compare to check the hashed password on the client side
-            bcrypt.compare(
-              password,
-              data.hashedPassword,
-              (/** @type {any} */ bcryptError, /** @type {any} */ result) => {
-                if (bcryptError) {
-                  console.log("Bcrypt error: ", bcryptError);
-                  errorMessage = "An unexpected error occurred.";
-                } else if (result) {
-                  errorMessage = "";
-                  console.log("Login successful!");
-                  // Redirect to the dashboard or another page
-                  goto("/dashboard");
-                } else {
-                  errorMessage = "Incorrect password.";
-                }
-              }
-            );
-          } else {
-            errorMessage = data.message || "Login failed.";
-          }
-        })
-        .catch((error) => {
-          console.error("Error during login:", error);
-          errorMessage = "An unexpected error occurred.";
-        });
-    } else {
-      errorMessage = "Please enter both username and password.";
+        body: JSON.stringify({ username, password }),
+      });
+
+      if (response.ok) {
+        const data = await response.text();
+        loginStatus = data;
+
+        if (data === "Login success") {
+          // Redirect to '/edit'
+          window.location.href = "/edit";
+        }
+      } else {
+        const error = await response.text();
+        loginStatus = error;
+      }
+    } catch (error) {
+      console.error("Error during login:", error);
     }
-  }
+  };
 </script>
 
-<form on:submit|preventDefault={handleLogin}>
+<form on:submit|preventDefault={login}>
   <label>
     Username:
     <input type="text" bind:value={username} />
@@ -71,9 +42,8 @@
   </label>
 
   <button type="submit">Login</button>
-
-  {#if errorMessage}
-    <p class="error-message">{errorMessage}</p>
+  {#if loginStatus}
+    <p>{loginStatus}</p>
   {/if}
 </form>
 
@@ -105,10 +75,5 @@
     padding: 10px;
     border: none;
     cursor: pointer;
-  }
-
-  .error-message {
-    color: red;
-    margin-top: 10px;
   }
 </style>
