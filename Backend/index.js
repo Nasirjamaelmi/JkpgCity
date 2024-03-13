@@ -30,8 +30,14 @@ app.post('/login', async (req, res) => {
   } else {
     res.status(401).send('Login failed');
   }
+});
 
- 
+app.get('/edit', async (req, res) => {
+  if (req.cookies.token === 'my-secret-token') {
+    res.send('User is logged in 😄');
+  } else {
+    res.status(401).send('User is NOT logged in');
+  }
 });
 
 app.use('/api/venues', venueRoutes); 
