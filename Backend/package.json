@@ -4,6 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "docker": "docker build -t jkpgcity . && docker tag jkpgcity localhost:5001/jkpgcity && docker push localhost:5001/jkpgcity",
+    "k8s-deploy": "kubectl apply -f deployment.yaml && kubectl apply -f service.yaml  && kubectl rollout restart -n jkpgcity deployment jkpgcity-deployment",
+    "k8s-run": "kubectl port-forward svc/jkpgcity-service 4000:4000 -n jkpgcity",
     "start": "nodemon -L index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
